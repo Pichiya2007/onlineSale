@@ -98,6 +98,13 @@ export const register = async (req, res) => {
 
         const data = req.body;
 
+        if (data.role == 'ADMIN_ROLE') {
+            return res.status(400).json({
+                success: false,
+                msg: 'No puedes registrarte con un rol de Administrador.'
+            })
+        }
+
         const encryptedPassword = await hash (data.password);
 
         const user = await Usuario.create({

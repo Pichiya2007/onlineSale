@@ -60,7 +60,17 @@ export const updateUser = async (req, res = response) => {
     try {
         
         const { id } = req.params;
-        const { _id, password, email, ...data } = req.body;
+        const { _id, password, email, role, ...data } = req.body;
+        const autheticatedUser = req.usuario;
+
+        if (role) {
+            if (!autheticatedUser || autheticatedUser.role !== 'ADMIN_ROLE') {
+                return res.status(403).json({
+                    success: false,
+                    msg: 'Solamente un administrador puede modificar el rol.'
+                })
+            }
+        }
 
         if (password) {
             data.password = await hash(password);
