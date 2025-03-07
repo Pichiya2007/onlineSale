@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "ab7be7d6-1a6d-42a9-b56f-8451ff35cec9",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37540016"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMTQ3NzcsImV4cCI6MTc0MTMxODM3N30.bkOpwgiOGCtSQy6tcoIjHEFOQU8Blfk85_fgdobSurU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juguete Max Steel\",\r\n    \"description\": \"es un max tealsnkdnaasf\",\r\n    \"price\": 10,\r\n    \"stock\": 123,\r\n    \"category\": \"67ca5c13155f19cb5f3dbf98\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/onlineSale/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "getProducts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMjIwMTEsImV4cCI6MTc0MTMyNTYxMX0.Ic6vfmDM1LFCQGYWPZP92nVwTlss2gCv-LhgOiVPT-Y",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "searchProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMjIwMTEsImV4cCI6MTc0MTMyNTYxMX0.Ic6vfmDM1LFCQGYWPZP92nVwTlss2gCv-LhgOiVPT-Y",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/products/67ca633d952c8a46e4f7ae94"
+			},
+			"response": []
+		},
+		{
+			"name": "getOutOfStockProducts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,143 @@
+[{
+  "_id": {
+    "$oid": "67caa6ea523d95b963b8bb21"
+  },
+  "name": "General",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:57:30.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:57:30.853Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa721523d95b963b8bb28"
+  },
+  "name": "Electrónica",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:58:25.823Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:58:25.823Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa72e523d95b963b8bb2b"
+  },
+  "name": "Ropa",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:58:38.095Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:58:38.095Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa737523d95b963b8bb2e"
+  },
+  "name": "Libros",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:58:47.614Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:58:47.614Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa741523d95b963b8bb31"
+  },
+  "name": "Electrodomésticos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:58:57.332Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:58:57.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa74a523d95b963b8bb34"
+  },
+  "name": "Juguetes",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:06.421Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:06.421Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa750523d95b963b8bb37"
+  },
+  "name": "Deportes",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:12.733Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:12.733Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa757523d95b963b8bb3a"
+  },
+  "name": "Belleza",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:19.399Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:19.399Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa75f523d95b963b8bb3d"
+  },
+  "name": "Muebles",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:27.215Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:27.215Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa76a523d95b963b8bb40"
+  },
+  "name": "Automotriz",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:38.193Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:38.193Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa76e523d95b963b8bb43"
+  },
+  "name": "Supermercado",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T07:59:42.177Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T07:59:42.177Z"
+  }
+}]

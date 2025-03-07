@@ -26,6 +26,11 @@ const ProductSchema = Schema({
         ref: 'Category',
         required: [true, 'Category is required']
     },
+    sold: {
+        type: Number,
+        default: 0,
+        min: [0, 'Sold count must be greater than or equal to 0']
+    },
     status: {
         type: Boolean,
         default: true

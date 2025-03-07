@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "67caa7f1523d95b963b8bb54"
+  },
+  "name": "Smartphone",
+  "description": "Smartphone con pantalla de 6.5 pulgadas, 128GB de almacenamiento y cámara de 48MP.",
+  "price": 299.99,
+  "stock": 50,
+  "category": {
+    "$oid": "67caa721523d95b963b8bb28"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:01:53.653Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:01:53.653Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa7fd523d95b963b8bb58"
+  },
+  "name": "Camiseta Deportiva",
+  "description": "Camiseta de algodón, ideal para actividades deportivas, disponible en varios colores.",
+  "price": 19.99,
+  "stock": 100,
+  "category": {
+    "$oid": "67caa72e523d95b963b8bb2b"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:02:05.711Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:02:05.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa80e523d95b963b8bb5c"
+  },
+  "name": "Novela de Misterio",
+  "description": "Una novela de misterio fascinante llena de giros inesperados.",
+  "price": 15.99,
+  "stock": 200,
+  "category": {
+    "$oid": "67caa737523d95b963b8bb2e"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:02:22.699Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:02:22.699Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa817523d95b963b8bb60"
+  },
+  "name": "Licuadora de Alta Potencia",
+  "description": "Licuadora con motor de 1000W, ideal para preparar smoothies y batidos.",
+  "price": 45.99,
+  "stock": 30,
+  "category": {
+    "$oid": "67caa741523d95b963b8bb31"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:02:31.009Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:02:31.009Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa820523d95b963b8bb64"
+  },
+  "name": "Muñeca Interactiva",
+  "description": "Muñeca interactiva que responde a comandos de voz y tiene movimientos automáticos.",
+  "price": 25.99,
+  "stock": 75,
+  "category": {
+    "$oid": "67caa74a523d95b963b8bb34"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:02:40.231Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:02:40.231Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa82f523d95b963b8bb68"
+  },
+  "name": "Balón de Fútbol Profesional",
+  "description": "Balón de fútbol de calidad profesional, ideal para entrenamiento y partidos.",
+  "price": 19.99,
+  "stock": 150,
+  "category": {
+    "$oid": "67caa750523d95b963b8bb37"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:02:55.025Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:02:55.025Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa83d523d95b963b8bb6c"
+  },
+  "name": "Crema Antiarrugas",
+  "description": "Crema antiarrugas con ingredientes naturales que ayuda a mejorar la elasticidad de la piel.",
+  "price": 29.99,
+  "stock": 120,
+  "category": {
+    "$oid": "67caa757523d95b963b8bb3a"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:03:09.179Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:03:09.179Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa845523d95b963b8bb70"
+  },
+  "name": "Sofá de 3 Plazas",
+  "description": "Sofá cómodo y moderno de 3 plazas, con cojines de espuma viscoelástica.",
+  "price": 399.99,
+  "stock": 25,
+  "category": {
+    "$oid": "67caa75f523d95b963b8bb3d"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:03:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:03:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa84c523d95b963b8bb74"
+  },
+  "name": "Batería de Coche",
+  "description": "Batería de coche de 12V, con una duración de hasta 5 años.",
+  "price": 89.99,
+  "stock": 40,
+  "category": {
+    "$oid": "67caa76a523d95b963b8bb40"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:03:24.479Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:03:24.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67caa852523d95b963b8bb78"
+  },
+  "name": "Auriculares Bluetooth",
+  "description": "Auriculares inalámbricos Bluetooth con cancelación de ruido y 20 horas de autonomía.",
+  "price": 49.99,
+  "stock": 60,
+  "category": {
+    "$oid": "67caa721523d95b963b8bb28"
+  },
+  "sold": 0,
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-07T08:03:30.069Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T08:03:30.069Z"
+  }
+}]
