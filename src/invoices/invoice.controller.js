@@ -78,3 +78,64 @@ export const getInvoicesByUser = async (req, res) => {
         })
     }
 }
+
+export const updateInvoice = async (req, res) => {
+    try {
+
+        const { id } = req.params;
+        const { products, status } = req.body;
+
+        const invoice = await Invoice.findById(id);
+        if (!invoice) {
+            return res.status(404).json({
+                success: false,
+                msg: 'Factura no encontrada.'
+            })
+        }
+
+        // Revierte el stock y las ventas de los productos de la factura original
+        for (const item of invoice.products) {
+            await Product.findByIdAndUpdate(item.product, {
+                $inc: { stock: item.quantity, sold: -item.quantity }
+            })
+        }
+
+        let total = 0;
+        for (const item of products) {
+            const product = await Product.findById(item.product);
+            if (!product || product.stock < item.quantity) {
+                return res.status(400).json({
+                    success: false,
+                    msg: `Stock insuficiente para el producto ${product.name}.`
+                })
+            }
+            total += product.price * item.quantity;
+        }
+
+        // Actualiza el stock y las ventas de los productos nuevos
+        for (const item of products) {
+            await Product.findByIdAndUpdate(item.product, {
+                $inc: { stock: -item.quantity, sold: item.quantity }
+            })
+        }
+
+        invoice.products = products;
+        invoice.total = total;
+        invoice.status = status;
+
+        await invoice.save();
+
+        res.status(200).json({
+            success: true,
+            msg: 'Factura actualizada con éxito.',
+            invoice
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al actualizar la factura.',
+            error: error.message
+        })
+    }
+}

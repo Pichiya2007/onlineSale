@@ -23,9 +23,52 @@
 		},
 		{
 			"name": "getInvoicesByUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDU0NjMsImV4cCI6MTc0MTQwOTA2M30.6khAE2F45FyTHot9WmX6CUQ--HqG_QMhUNGg8hbk1p0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/onlineSale/v1/invoices"
+			},
+			"response": []
+		},
+		{
+			"name": "updateInvoice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MjVlMTUxYTNjZWE5YmVjMzE0MDciLCJpYXQiOjE3NDE0MDQ0NzgsImV4cCI6MTc0MTQwODA3OH0.yEXcL8VX3EpapEChczmK5JcGKRIEOro2fcqKaBmxk7w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"products\": [\r\n        {\r\n            \"product\": \"67caa80e523d95b963b8bb5c\",\r\n            \"quantity\": 20\r\n        },\r\n        {\r\n            \"product\": \"67caa7fd523d95b963b8bb58\",\r\n            \"quantity\": 10\r\n        }\r\n    ],\r\n    \"status\": \"PAID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/onlineSale/v1/invoices/67cbb511871dfc2c9ca6470b"
 			},
 			"response": []
 		}
