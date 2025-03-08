@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { addCategory, updateCategory, getCategories, deleteCategory } from './category.controller.js';
+import { addCategory, updateCategory, getCategories, getProductsByCategory, deleteCategory } from './category.controller.js';
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from '../middlewares/validar-jwt.js';
 import { tieneRole } from '../middlewares/role-validator.js';
@@ -19,6 +19,15 @@ router.post(
 )
 
 router.get('/', getCategories)
+
+router.get(
+    '/products/:id',
+    [
+        validarJWT,
+        tieneRole('ADMIN_ROLE', 'CLIENT_ROLE')
+    ],
+    getProductsByCategory
+)
 
 router.put(
     '/:id',

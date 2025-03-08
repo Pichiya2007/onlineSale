@@ -170,6 +170,36 @@ export const getBestSellingProducts = async (req, res) => {
     }
 }
 
+export const searchProductsByName = async (req, res) => {
+    try {
+
+        const { name } = req.query;
+        const query = { status: true, name: new RegExp(name, 'i') }; // 'i' para que no tenga problemas con mayúsculas/minúsculas
+
+        const products = await Product.find(query);
+
+        const productsWithCategories = await Promise.all(products.map(async (product) => {
+            const productCategory = await Category.findById(product.category);
+            return {
+                ...product.toObject(),
+                category: productCategory ? productCategory.name : 'Categoría no encontrada.'
+            }
+        }))
+
+        res.status(200).json({
+            success: true,
+            products: productsWithCategories
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al buscar productos por nombre.',
+            error: error.message
+        })
+    }
+}
+
 export const deleteProduct = async (req, res) => {
     try {
 

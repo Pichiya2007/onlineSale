@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { addProduct, getProducts, searchProduct, getOutOfStockProducts, getBestSellingProducts, deleteProduct } from './product.controller.js';
+import { addProduct, getProducts, searchProduct, getOutOfStockProducts, getBestSellingProducts, searchProductsByName, deleteProduct } from './product.controller.js';
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from '../middlewares/validar-jwt.js';
 import { tieneRole } from '../middlewares/role-validator.js';
@@ -43,6 +43,15 @@ router.get(
         tieneRole('ADMIN_ROLE')
     ],
     getBestSellingProducts
+)
+
+router.get(
+    '/nombre',
+    [
+        validarJWT,
+        tieneRole('ADMIN_ROLE', 'CLIENT_ROLE')
+    ],
+    searchProductsByName
 )
 
 router.get(
