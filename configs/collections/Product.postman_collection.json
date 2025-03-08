@@ -13,13 +13,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMTQ3NzcsImV4cCI6MTc0MTMxODM3N30.bkOpwgiOGCtSQy6tcoIjHEFOQU8Blfk85_fgdobSurU",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMzI0NDYsImV4cCI6MTc0MTMzNjA0Nn0.Q2Y9Uy6k-DmlYXCEI_xrdvuA3nXZB7Yy__GD3Whczto",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Juguete Max Steel\",\r\n    \"description\": \"es un max tealsnkdnaasf\",\r\n    \"price\": 10,\r\n    \"stock\": 123,\r\n    \"category\": \"67ca5c13155f19cb5f3dbf98\"\r\n}",
+					"raw": "\r\n  {\r\n    \"name\": \"Auriculares Bluetooth\",\r\n    \"description\": \"Auriculares inalámbricos Bluetooth con cancelación de ruido y 20 horas de autonomía.\",\r\n    \"price\": 49.99,\r\n    \"stock\": 60,\r\n    \"category\": \"67caa721523d95b963b8bb28\"\r\n  }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -37,7 +37,7 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMjIwMTEsImV4cCI6MTc0MTMyNTYxMX0.Ic6vfmDM1LFCQGYWPZP92nVwTlss2gCv-LhgOiVPT-Y",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MjVlMTUxYTNjZWE5YmVjMzE0MDciLCJpYXQiOjE3NDE0MDY4NDEsImV4cCI6MTc0MTQxMDQ0MX0.vznTsW63FlI8xwtf_XNaM-sSFYNmh49y8K2eKtAo1kM",
 						"type": "text"
 					}
 				],
@@ -52,11 +52,11 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMjIwMTEsImV4cCI6MTc0MTMyNTYxMX0.Ic6vfmDM1LFCQGYWPZP92nVwTlss2gCv-LhgOiVPT-Y",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MjVlMTUxYTNjZWE5YmVjMzE0MDciLCJpYXQiOjE3NDE0MDU2MDIsImV4cCI6MTc0MTQwOTIwMn0.nQvfMouHacJDAm8Vu9n-9ErUgfJYKde6TWch3q4pG1Y",
 						"type": "text"
 					}
 				],
-				"url": "http://localhost:3000/onlineSale/v1/products/67ca633d952c8a46e4f7ae94"
+				"url": "http://localhost:3000/onlineSale/v1/products/67caa80e523d95b963b8bb5c"
 			},
 			"response": []
 		},
@@ -64,7 +64,44 @@
 			"name": "getOutOfStockProducts",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMzI0NDYsImV4cCI6MTc0MTMzNjA0Nn0.Q2Y9Uy6k-DmlYXCEI_xrdvuA3nXZB7Yy__GD3Whczto",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/products/agotados"
+			},
+			"response": []
+		},
+		{
+			"name": "getBestSellingProducts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDc2NjgsImV4cCI6MTc0MTQxMTI2OH0.YPJSwEVc4j1pC9jEvpwQAw4SNHILWebIaCyDL-SPof4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/products/ventas"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDc2NjgsImV4cCI6MTc0MTQxMTI2OH0.YPJSwEVc4j1pC9jEvpwQAw4SNHILWebIaCyDL-SPof4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/products/67caa83d523d95b963b8bb6c"
 			},
 			"response": []
 		}
