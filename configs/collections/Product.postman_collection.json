@@ -37,7 +37,7 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MjVlMTUxYTNjZWE5YmVjMzE0MDciLCJpYXQiOjE3NDE0MDY4NDEsImV4cCI6MTc0MTQxMDQ0MX0.vznTsW63FlI8xwtf_XNaM-sSFYNmh49y8K2eKtAo1kM",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MTA0NTYsImV4cCI6MTc0MTQxNDA1Nn0.DP-CK6aCPuPbsISMvNtZIfeAKdZuXDY5PpHM0Ou3q7I",
 						"type": "text"
 					}
 				],
@@ -102,6 +102,40 @@
 					}
 				],
 				"url": "http://localhost:3000/onlineSale/v1/products/67caa83d523d95b963b8bb6c"
+			},
+			"response": []
+		},
+		{
+			"name": "getProductByName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDc2NjgsImV4cCI6MTc0MTQxMTI2OH0.YPJSwEVc4j1pC9jEvpwQAw4SNHILWebIaCyDL-SPof4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/onlineSale/v1/products/nombre?name=batería%20de%20coche",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"onlineSale",
+						"v1",
+						"products",
+						"nombre"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "batería%20de%20coche"
+						}
+					]
+				}
 			},
 			"response": []
 		}

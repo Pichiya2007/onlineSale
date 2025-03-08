@@ -38,17 +38,35 @@
   "_id": {
     "$oid": "67c9526d238577f25f8ce681"
   },
-  "name": "cliente",
-  "surname": "cliente",
-  "username": "cliente",
+  "name": "clienteditado",
+  "surname": "clienteditado",
+  "username": "clienteditado",
   "email": "cliente@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$EfO09mkpXh51NE9PtqKC0A$US1AMXog40QcsyY6thDYHjjQWLQMpczvyTReDQQlrkc",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Maj/4HGk6EhtY4J23yCmTA$LaWAz+pAQ2lStl3j/adgpUNWqYjc93VA0NHa+JJdFjI",
   "role": "CLIENT_ROLE",
   "estado": true,
   "createdAt": {
     "$date": "2025-03-06T07:44:45.862Z"
   },
   "updatedAt": {
-    "$date": "2025-03-06T07:44:45.862Z"
+    "$date": "2025-03-08T05:48:21.499Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cbd793fdd702f94cd58e01"
+  },
+  "name": "cliente2",
+  "surname": "cliente2",
+  "username": "cliente2",
+  "email": "cliente2@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$UkI4pe90Eh3cGQoDvyCgHA$wUiIK5sQmOJmYFNpsu7E79ET3GBxMC0ZhHXzVmtIKwI",
+  "role": "CLIENT_ROLE",
+  "estado": false,
+  "createdAt": {
+    "$date": "2025-03-08T05:37:23.995Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T05:47:38.861Z"
   }
 }]

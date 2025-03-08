@@ -13,14 +13,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"PruebaRegister\",\r\n    \"surname\": \"PruebaRegister\",\r\n    \"username\": \"PruebaRegister\",\r\n    \"email\": \"prueba@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"raw": "{\r\n    \"name\": \"cliente2\",\r\n    \"surname\": \"cliente2\",\r\n    \"username\": \"cliente2\",\r\n    \"email\": \"cliente2@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:3006/coperex/v1/auth/register"
+				"url": "http://localhost:3000/onlineSale/v1/auth/register"
 			},
 			"response": []
 		},
@@ -31,14 +31,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"prueba@gmail.com\",\r\n    \"password\": \"elmergod\"\r\n}",
+					"raw": "{\r\n    \"email\": \"cliente@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:3006/coperex/v1/auth/login"
+				"url": "http://localhost:3000/onlineSale/v1/auth/login"
 			},
 			"response": []
 		},
@@ -48,21 +48,21 @@
 				"method": "PUT",
 				"header": [
 					{
-						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNGUxNDUwMWYxZTZlMzZjM2VjNjAiLCJpYXQiOjE3NDA1MjUxOTgsImV4cCI6MTc0MDUyODc5OH0.FSEqOQuTUwgEp56ENwcvaxPLcPa4pg0aJYO1taSMD7Q",
+						"key": "",
+						"value": "",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"prueba@gmail.com\",\r\n    \"oldPassword\": \"12345678\",\r\n    \"newPassword\": \"elmergod\"\r\n}",
+					"raw": "{\r\n    \"email\": \"cliente@gmail.com\",\r\n    \"oldPassword\": \"12345678\",\r\n    \"newPassword\": \"123456789\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:3006/coperex/v1/auth/updatepassword"
+				"url": "http://localhost:3000/onlineSale/v1/auth/updatepassword"
 			},
 			"response": []
 		},
@@ -73,20 +73,20 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNGUxNDUwMWYxZTZlMzZjM2VjNjAiLCJpYXQiOjE3NDA1MjUxOTgsImV4cCI6MTc0MDUyODc5OH0.FSEqOQuTUwgEp56ENwcvaxPLcPa4pg0aJYO1taSMD7Q",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiZDc5M2ZkZDcwMmY5NGNkNThlMDEiLCJpYXQiOjE3NDE0MTIyNTIsImV4cCI6MTc0MTQxNTg1Mn0.buaV8VT1BRZlFpiehf8iuGNga9QcbInOavCXnwKxX4s",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"pruebaeditar\",\r\n    \"surname\": \"PruebaRegister\",\r\n    \"username\": \"PruebaRegister\",\r\n    \"email\": \"prueba@gmail.com\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
+					"raw": "{\r\n    \"name\": \"clienteditado\",\r\n    \"surname\": \"clienteditado\",\r\n    \"username\": \"clienteditado\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:3006/coperex/v1/users/67be4e14501f1e6e36c3ec60"
+				"url": "http://localhost:3000/onlineSale/v1/users/67c9526d238577f25f8ce681"
 			},
 			"response": []
 		},
@@ -95,7 +95,31 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:3006/coperex/v1/users"
+				"url": "http://localhost:3000/onlineSale/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiZDc5M2ZkZDcwMmY5NGNkNThlMDEiLCJpYXQiOjE3NDE0MTI3MDUsImV4cCI6MTc0MTQxNjMwNX0.TUaz9ERGudyFP64X9Ggl3oaR1xqCghUfwinY6txpbjM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"confirm\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/onlineSale/v1/users/67cbd793fdd702f94cd58e01"
 			},
 			"response": []
 		}

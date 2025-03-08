@@ -63,6 +63,21 @@ export const updateUser = async (req, res = response) => {
         const { _id, password, email, role, ...data } = req.body;
         const autheticatedUser = req.usuario;
 
+        // Verificar que el usuario autenticado solo pueda actualizar sus propios datos
+        if (autheticatedUser._id.toString() !== id && autheticatedUser.role !== 'ADMIN_ROLE') {
+            return res.status(403).json({
+                success: false,
+                msg: 'No tienes permiso para modificar los datos de este usuario.'
+            })
+        }
+
+        if (email) {
+            return res.status(400).json({
+                success:false,
+                msg: 'No puedes modificar el correo.'
+            })
+        }
+
         if (role) {
             if (!autheticatedUser || autheticatedUser.role !== 'ADMIN_ROLE') {
                 return res.status(403).json({
@@ -93,18 +108,35 @@ export const updateUser = async (req, res = response) => {
     }
 }
 
-/*export const deleteUser = async (req, res) => {
+export const deleteUser = async (req, res) => {
     try {
-        
+
         const { id } = req.params;
+        const { confirm } = req.body; // Verificar la confirmación
+        const authenticatedUser = req.usuario;
+
+        // Verificar que el usuario autenticado solo pueda desactivar su propia cuenta
+        if (authenticatedUser._id.toString() !== id && authenticatedUser.role !== 'ADMIN_ROLE') {
+            return res.status(403).json({
+                success: false,
+                msg: 'No tienes permiso para desactivar esta cuenta.'
+            })
+        }
+
+        // Verificar la confirmación
+        if (!confirm) {
+            return res.status(400).json({
+                success: false,
+                msg: 'Se requiere confirmación para desactivar la cuenta.'
+            })
+        }
+
         const user = await User.findByIdAndUpdate(id, { estado: false }, { new: true });
-        const autheticatedUser = req.user;
 
         res.status(200).json({
             success: true,
             msg: 'Usuario desactivado',
-            user,
-            autheticatedUser
+            user
         })
 
     } catch (error) {
@@ -114,7 +146,7 @@ export const updateUser = async (req, res = response) => {
             error
         })
     }
-}*/
+}
 
 export const defaultAdmin = async () => {
     try {

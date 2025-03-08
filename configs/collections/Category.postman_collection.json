@@ -29,13 +29,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMTQ3NzcsImV4cCI6MTc0MTMxODM3N30.bkOpwgiOGCtSQy6tcoIjHEFOQU8Blfk85_fgdobSurU",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzMzQyNzQsImV4cCI6MTc0MTMzNzg3NH0.GmQmkuk7aZhl2VKZe7axxS44jWzviJ3Oeq_96lQv17Q",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Tecnología\"\r\n}",
+					"raw": "\r\n \r\n  { \"name\": \"Supermercado\" }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,6 +82,21 @@
 					}
 				],
 				"url": "http://localhost:3000/onlineSale/v1/categories/67c9266b68e661844ca2f2d6"
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsByCategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MTA0NTYsImV4cCI6MTc0MTQxNDA1Nn0.DP-CK6aCPuPbsISMvNtZIfeAKdZuXDY5PpHM0Ou3q7I",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/categories/products/67caa721523d95b963b8bb28"
 			},
 			"response": []
 		}

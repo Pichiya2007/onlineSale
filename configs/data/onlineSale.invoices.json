@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67cbb511871dfc2c9ca6470b"
+  },
+  "user": {
+    "$oid": "67c914c777099f854b3fff98"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67caa80e523d95b963b8bb5c"
+      },
+      "quantity": 20,
+      "_id": {
+        "$oid": "67cbc3af9b2f0f1d0104f52c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67caa7fd523d95b963b8bb58"
+      },
+      "quantity": 10,
+      "_id": {
+        "$oid": "67cbc3af9b2f0f1d0104f52d"
+      }
+    }
+  ],
+  "total": 519.7,
+  "status": "PAID",
+  "createdAt": {
+    "$date": "2025-03-08T03:10:09.091Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-08T04:12:31.092Z"
+  }
+}]

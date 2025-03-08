@@ -25,17 +25,17 @@
   "name": "Camiseta Deportiva",
   "description": "Camiseta de algodón, ideal para actividades deportivas, disponible en varios colores.",
   "price": 19.99,
-  "stock": 100,
+  "stock": 90,
   "category": {
     "$oid": "67caa72e523d95b963b8bb2b"
   },
-  "sold": 0,
+  "sold": 10,
   "status": true,
   "createdAt": {
     "$date": "2025-03-07T08:02:05.711Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T08:02:05.711Z"
+    "$date": "2025-03-08T04:12:31.089Z"
   }
 },
 {
@@ -45,17 +45,17 @@
   "name": "Novela de Misterio",
   "description": "Una novela de misterio fascinante llena de giros inesperados.",
   "price": 15.99,
-  "stock": 200,
+  "stock": 190,
   "category": {
     "$oid": "67caa737523d95b963b8bb2e"
   },
-  "sold": 0,
+  "sold": 10,
   "status": true,
   "createdAt": {
     "$date": "2025-03-07T08:02:22.699Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T08:02:22.699Z"
+    "$date": "2025-03-08T04:12:31.088Z"
   }
 },
 {
@@ -130,12 +130,12 @@
     "$oid": "67caa757523d95b963b8bb3a"
   },
   "sold": 0,
-  "status": true,
+  "status": false,
   "createdAt": {
     "$date": "2025-03-07T08:03:09.179Z"
   },
   "updatedAt": {
-    "$date": "2025-03-07T08:03:09.179Z"
+    "$date": "2025-03-08T04:32:54.193Z"
   }
 },
 {

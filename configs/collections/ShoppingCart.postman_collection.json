@@ -13,13 +13,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDEzOTk1MTQsImV4cCI6MTc0MTQwMzExNH0.Fgzm6JllDNeaTMHVS1PFdZJooi4VNclg3mE1WXxq2Ws",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDMwNDksImV4cCI6MTc0MTQwNjY0OX0.6NoFoOYwS5_5jenMcEzMrt0iDCnYPcCsEB_T0F4Fzkc",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"product\": \"67caa80e523d95b963b8bb5c\",\r\n    \"quantity\": 200 \r\n}",
+					"raw": "{\r\n    \"product\": \"67caa80e523d95b963b8bb5c\",\r\n    \"quantity\": 20 \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -32,15 +32,27 @@
 		},
 		{
 			"name": "getCart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MjVlMTUxYTNjZWE5YmVjMzE0MDciLCJpYXQiOjE3NDE0MDA1NzEsImV4cCI6MTc0MTQwNDE3MX0.2C8k03wlS4NJxvckE_bJLBXxlplzZLhpcepVn_ZHsvI",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDMwNDksImV4cCI6MTc0MTQwNjY0OX0.6NoFoOYwS5_5jenMcEzMrt0iDCnYPcCsEB_T0F4Fzkc",
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "http://localhost:3000/onlineSale/v1/carts"
 			},
 			"response": []
