@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "71a4a2a9-ae1e-49aa-8e98-fe326629abc1",
+		"name": "Purchase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37540016"
+	},
+	"item": [
+		{
+			"name": "addPurchase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M5MTRjNzc3MDk5Zjg1NGIzZmZmOTgiLCJpYXQiOjE3NDE0MDMwNDksImV4cCI6MTc0MTQwNjY0OX0.6NoFoOYwS5_5jenMcEzMrt0iDCnYPcCsEB_T0F4Fzkc",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/onlineSale/v1/invoices/purchase"
+			},
+			"response": []
+		}
+	]
+}
