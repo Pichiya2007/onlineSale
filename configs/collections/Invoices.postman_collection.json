@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "71a4a2a9-ae1e-49aa-8e98-fe326629abc1",
-		"name": "Purchase",
+		"name": "Invoices",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "37540016"
 	},
@@ -18,6 +18,14 @@
 					}
 				],
 				"url": "http://localhost:3000/onlineSale/v1/invoices/purchase"
+			},
+			"response": []
+		},
+		{
+			"name": "getInvoicesByUser",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}

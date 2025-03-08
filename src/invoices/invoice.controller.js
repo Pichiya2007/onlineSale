@@ -58,3 +58,23 @@ export const purchase = async (req, res) => {
         })
     }
 }
+
+export const getInvoicesByUser = async (req, res) => {
+    try {
+
+        const userId = req.usuario._id;
+        const invoices = await Invoice.find({ user: userId }).populate('products.product');
+
+        res.status(200).json({
+            success: true,
+            invoices
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al obtener las facturas.',
+            error: error.message
+        })
+    }
+}
